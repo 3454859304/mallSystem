@@ -10,11 +10,14 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>mallsystem-common</module>
         <module>mallsystem-member</module>
         <module>mallsystem-order</module>
         <module>mallsystem-product</module>
         <module>mallsystem-ware</module>
         <module>mallsystem-coupon</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
     </modules>
 
 </project>

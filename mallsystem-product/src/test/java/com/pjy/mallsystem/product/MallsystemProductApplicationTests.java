@@ -1,13 +1,30 @@
 package com.pjy.mallsystem.product;
 
-import org.junit.jupiter.api.Test;
+
+import com.pjy.common.utils.R;
+import com.pjy.mallsystem.product.entity.BrandEntity;
+import com.pjy.mallsystem.product.service.BrandService;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 @SpringBootTest
-class MallsystemProductApplicationTests {
+@RunWith(SpringRunner.class)
+public class MallsystemProductApplicationTests {
+
+    @Autowired
+    BrandService brandService;
 
     @Test
-    void contextLoads() {
-    }
+    public void contextLoads() {
 
+        BrandEntity brandEntity = new BrandEntity();
+        brandEntity.setBrandId(1L);
+        brandEntity.setName("pjy");
+        brandEntity.setDescript("huawei");
+        brandService.removeById(brandEntity);
+        System.out.println("保存成功");
+    }
 }

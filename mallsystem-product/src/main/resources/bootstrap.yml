@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: mallsystem-product
+  profiles:
+    active: dev
+

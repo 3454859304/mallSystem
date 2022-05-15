@@ -1,0 +1,14 @@
+
+nacos.namespace.dev: 27e4e918-b443-4635-a5e7-4c6d1b0b5e3c
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.103.133.27:8848
+        namespace: ${nacos.namespace.dev}
+      config:
+        server-addr: 39.103.133.27:8848
+        namespace: ${nacos.namespace.dev}
+        group: member
+        file-extension: yml

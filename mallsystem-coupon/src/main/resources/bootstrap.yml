@@ -1,0 +1,18 @@
+
+spring:
+  application:
+    name: mallsystem-coupon
+    #version: '@project.version@' # MAVEN中定义的版本号
+  profiles:
+    active: dev
+    #active: '@spring.profiles.active@' ${spring.profiles.active}
+    # 如果我们需要切换到测试环境，
+    #只需要修改spring.profiles.active=test即可。
+    #不过这个属性配置是写死在bootstrap.properties文件中的，修改起来显得很麻烦。
+    #通过做法：通过-Dspring.profiles.active=${profile}参数来指定环境，以达到灵活切换的目的。
+
+nacos.namespace.test: 348f266a-21df-4cf9-bc7c-9eabf5d52302
+nacos.namespace.dev: 27e4e918-b443-4635-a5e7-4c6d1b0b5e3c
+nacos.namespce.prod: 856ca3b5-1ab4-4402-8c14-1765e347c01b
+
+

@@ -1,0 +1,26 @@
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.103.133.27:8848
+        #username:
+        #password:
+        namespace: ${nacos.namespace.test}
+      config:
+        server-addr: 39.103.133.27:8848
+        #username:
+        #password:
+        namespace: ${nacos.namespace.test}
+        group: coupon
+        file-extension: yml
+
+          #shared-dataids: datasource.yml
+          #sharedConfigs:
+          #- dataId: mallsystem-coupon-datasource.yml
+          #- dataId: redis配置
+          #- dataId: rocketMQ配置
+        #- dataId: mongodb配置
+
+
+

@@ -21,10 +21,9 @@ public class MallsystemProductApplicationTests {
     public void contextLoads() {
 
         BrandEntity brandEntity = new BrandEntity();
-        brandEntity.setBrandId(1L);
         brandEntity.setName("pjy");
         brandEntity.setDescript("huawei");
-        brandService.removeById(brandEntity);
+        brandService.save(brandEntity);
         System.out.println("保存成功");
     }
 }

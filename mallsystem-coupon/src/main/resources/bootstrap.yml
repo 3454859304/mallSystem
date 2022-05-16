@@ -14,5 +14,3 @@ spring:
 nacos.namespace.test: 348f266a-21df-4cf9-bc7c-9eabf5d52302
 nacos.namespace.dev: 27e4e918-b443-4635-a5e7-4c6d1b0b5e3c
 nacos.namespce.prod: 856ca3b5-1ab4-4402-8c14-1765e347c01b
-
-

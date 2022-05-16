@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: mallsystem-gateway
+  profiles:
+    active: dev
+

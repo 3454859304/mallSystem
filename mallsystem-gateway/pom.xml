@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>mallsystem-product</artifactId>
+    <artifactId>mallsystem-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mallsystem-product</name>
-    <description>商城系统-商品服务</description>
+    <name>mallsystem-gateway</name>
     <packaging>jar</packaging>
+    <description>商城系统-网关</description>
 
     <parent>
         <groupId>com.pjy.mallsystem</groupId>
@@ -15,15 +15,28 @@
     </parent>
 
     <dependencies>
+        <!-- 注册发现 -->
         <dependency>
-            <groupId>com.pjy.mallsystem</groupId>
-            <artifactId>mallsystem-common</artifactId>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+        <!-- 配置中心 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <!-- gateway 网关-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+        <!-- springboot-test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>

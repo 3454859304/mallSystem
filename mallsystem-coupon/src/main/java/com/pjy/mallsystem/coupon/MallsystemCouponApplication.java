@@ -14,4 +14,5 @@ public class MallsystemCouponApplication {
         SpringApplication.run(MallsystemCouponApplication.class, args);
     }
 
+
 }

@@ -1,19 +1,16 @@
 package com.pjy.mallsystem.product.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-
+import com.pjy.common.utils.R;
+import com.pjy.mallsystem.product.entity.CategoryEntity;
+import com.pjy.mallsystem.product.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.pjy.mallsystem.product.entity.CategoryEntity;
-import com.pjy.mallsystem.product.service.CategoryService;
-import com.pjy.common.utils.PageUtils;
-import com.pjy.common.utils.R;
+import java.util.Arrays;
+import java.util.List;
 
 
 
@@ -25,20 +22,21 @@ import com.pjy.common.utils.R;
  * @date 2022-05-12 16:33:33
  */
 @RestController
-@RequestMapping("product/category")
+@RequestMapping("/product/category")
 public class CategoryController {
     @Autowired
     private CategoryService categoryService;
 
     /**
-     * 列表
+     * 商品三级分类列表
+     *
+     * @author pjy
      */
-    @RequestMapping("/list")
+    @RequestMapping("/list/tree")
     //@RequiresPermissions("product:category:list")
-    public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = categoryService.queryPage(params);
-
-        return R.ok().put("page", page);
+    public R listWithTree(){
+        List<CategoryEntity> listTree = categoryService.listWithTree();
+        return R.ok().put("menuTree",listTree);
     }
 
 

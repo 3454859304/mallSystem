@@ -22,7 +22,6 @@ public class CouponHistoryServiceImpl extends ServiceImpl<CouponHistoryDao, Coup
                 new Query<CouponHistoryEntity>().getPage(params),
                 new QueryWrapper<CouponHistoryEntity>()
         );
-
         return new PageUtils(page);
     }
 

@@ -16,7 +16,17 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+
+    <properties>
+        <mybatisplus.version>3.3.2</mybatisplus.version>
+        <lombok.version>1.18.8</lombok.version>
+        <httpcore.version>4.4.13</httpcore.version>
+        <commons-lang.version>2.6</commons-lang.version>
+        <mysql-connector.version>8.0.28</mysql-connector.version>
+    </properties>
+
     <dependencies>
+
         <!--mybatisplus插件-->
         <dependency>
             <groupId>com.baomidou</groupId>
@@ -30,11 +40,11 @@
             <version>1.18.8</version>
         </dependency>
         <!-- org.apache.httpcomponents/httpcore -->
-        <dependency>
+        <!--<dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpcore</artifactId>
             <version>4.4.13</version>
-        </dependency>
+        </dependency>-->
         <!--comon-lang-->
         <dependency>
             <groupId>commons-lang</groupId>

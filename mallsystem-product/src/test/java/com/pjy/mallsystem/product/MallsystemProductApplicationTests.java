@@ -1,7 +1,6 @@
 package com.pjy.mallsystem.product;
 
 
-import com.pjy.common.utils.R;
 import com.pjy.mallsystem.product.entity.BrandEntity;
 import com.pjy.mallsystem.product.service.BrandService;
 import org.junit.Test;
@@ -26,4 +25,6 @@ public class MallsystemProductApplicationTests {
         brandService.save(brandEntity);
         System.out.println("保存成功");
     }
+
+
 }

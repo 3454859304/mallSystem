@@ -6,7 +6,8 @@
  * 版权所有，侵权必究！
  */
 
-package com.pjy.common.utils;
+package com.pjy.mallsystem.common.utils;
+
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import java.io.Serializable;
 import java.util.List;

@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.pjy.mallsystem.member.entity.MemberCollectSubjectEntity;
 import com.pjy.mallsystem.member.service.MemberCollectSubjectService;
-import com.pjy.common.utils.PageUtils;
-import com.pjy.common.utils.R;
+import com.pjy.mallsystem.common.utils.PageUtils;
+import com.pjy.mallsystem.common.utils.R;
 
 
 

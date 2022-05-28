@@ -1,6 +1,6 @@
 package com.pjy.mallsystem.product.controller;
 
-import com.pjy.common.utils.R;
+import com.pjy.mallsystem.common.utils.R;
 import com.pjy.mallsystem.product.entity.CategoryEntity;
 import com.pjy.mallsystem.product.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +36,7 @@ public class CategoryController {
     //@RequiresPermissions("product:category:list")
     public R listWithTree(){
         List<CategoryEntity> listTree = categoryService.listWithTree();
-        return R.ok().put("menuTree",listTree);
+        return R.ok().put("data",listTree);
     }
 
 
@@ -63,6 +63,16 @@ public class CategoryController {
     }
 
     /**
+     * 批量修改排序和结构
+     */
+    @RequestMapping("/update/sort")
+    //@RequiresPermissions("product:category:update")
+    public R updateSort(@RequestBody CategoryEntity[] categoryList){
+        categoryService.updateBatchById(Arrays.asList(categoryList));
+        return R.ok();
+    }
+
+    /**
      * 修改
      */
     @RequestMapping("/update")
@@ -79,7 +89,7 @@ public class CategoryController {
     @RequestMapping("/delete")
     //@RequiresPermissions("product:category:delete")
     public R delete(@RequestBody Long[] catIds){
-		categoryService.removeByIds(Arrays.asList(catIds));
+        categoryService.removeMenuByIds(Arrays.asList(catIds));
 
         return R.ok();
     }

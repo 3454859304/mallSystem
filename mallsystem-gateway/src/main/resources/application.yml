@@ -7,7 +7,13 @@ spring:
           predicates:
             - Path=/api/product/**
           filters:
-            - RewritePath=/api/(?<segment>/?.*),/$\{segment}
+            - RewritePath=/api/(?<segment>/?.*),/$\{segment} #正则表达式替换
+        - id: third-party
+          uri: lb://mallsystem-third-party
+          predicates:
+            - Path=/api/thirdparty/**
+          filters:
+            - RewritePath=/api/thirdparty/(?<segment>/?.*),/$\{segment}
         - id: admin
           uri: lb://renren-fast
           predicates:

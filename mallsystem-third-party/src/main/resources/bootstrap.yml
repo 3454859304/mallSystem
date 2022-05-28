@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: mallsystem-third-party
+  profiles:
+    active: dev
+

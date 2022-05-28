@@ -1,7 +1,7 @@
 package com.pjy.mallsystem.order.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.pjy.common.utils.PageUtils;
+import com.pjy.mallsystem.common.utils.PageUtils;
 import com.pjy.mallsystem.order.entity.OrderReturnReasonEntity;
 
 import java.util.Map;

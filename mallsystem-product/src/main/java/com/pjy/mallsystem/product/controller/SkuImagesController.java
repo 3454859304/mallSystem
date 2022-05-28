@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.pjy.mallsystem.product.entity.SkuImagesEntity;
 import com.pjy.mallsystem.product.service.SkuImagesService;
-import com.pjy.common.utils.PageUtils;
-import com.pjy.common.utils.R;
+import com.pjy.mallsystem.common.utils.PageUtils;
+import com.pjy.mallsystem.common.utils.R;
 
 
 

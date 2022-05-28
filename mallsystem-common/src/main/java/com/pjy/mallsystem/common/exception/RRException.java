@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package com.pjy.common.exception;
+package com.pjy.mallsystem.common.exception;
 
 /**
  * 自定义异常

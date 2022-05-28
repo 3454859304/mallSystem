@@ -5,8 +5,8 @@ import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.pjy.common.utils.PageUtils;
-import com.pjy.common.utils.Query;
+import com.pjy.mallsystem.common.utils.PageUtils;
+import com.pjy.mallsystem.common.utils.Query;
 
 import com.pjy.mallsystem.order.dao.OrderSettingDao;
 import com.pjy.mallsystem.order.entity.OrderSettingEntity;

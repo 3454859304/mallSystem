@@ -1,7 +1,7 @@
 package com.pjy.mallsystem.product.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.pjy.common.utils.PageUtils;
+import com.pjy.mallsystem.common.utils.PageUtils;
 import com.pjy.mallsystem.product.entity.AttrEntity;
 
 import java.util.Map;

@@ -1,0 +1,22 @@
+#spring:
+#  datasource:
+#    url: jdbc:mysql://39.103.133.27/gulimall_pms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+#    username: root
+#    password: pjy
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 39.103.133.27:8848
+#  application:
+#    name: mallsystem-third-party
+server:
+  port: 30000
+spring:
+  cloud:
+    alicloud:
+      access-key: LTAI5tAM2kUcCkSi5UqzPi5e
+      secret-key: claBIrJfIBzr5IPGjcjciqLCqfChzD
+      oss:
+        endpoint: oss-cn-hangzhou.aliyuncs.com
+        bucket: mallsystem1

@@ -1,4 +1,4 @@
-package com.pjy.common.xss;
+package com.pjy.mallsystem.common.xss;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;

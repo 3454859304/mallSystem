@@ -7,7 +7,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 
 @EnableDiscoveryClient
 @RefreshScope
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.pjy.mallsystem.common","com.pjy.mallsystem.coupon"})
 public class MallsystemCouponApplication {
 
     public static void main(String[] args) {

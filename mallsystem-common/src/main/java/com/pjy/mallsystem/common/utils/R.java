@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package com.pjy.common.utils;
+package com.pjy.mallsystem.common.utils;
 
 import org.apache.http.HttpStatus;
 import java.util.HashMap;

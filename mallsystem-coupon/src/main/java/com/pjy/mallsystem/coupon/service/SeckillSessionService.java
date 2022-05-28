@@ -1,7 +1,7 @@
 package com.pjy.mallsystem.coupon.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.pjy.common.utils.PageUtils;
+import com.pjy.mallsystem.common.utils.PageUtils;
 import com.pjy.mallsystem.coupon.entity.SeckillSessionEntity;
 
 import java.util.Map;

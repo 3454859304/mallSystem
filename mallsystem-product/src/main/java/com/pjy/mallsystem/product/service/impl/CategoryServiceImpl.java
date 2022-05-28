@@ -3,8 +3,8 @@ package com.pjy.mallsystem.product.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.pjy.common.utils.PageUtils;
-import com.pjy.common.utils.Query;
+import com.pjy.mallsystem.common.utils.PageUtils;
+import com.pjy.mallsystem.common.utils.Query;
 import com.pjy.mallsystem.product.dao.CategoryDao;
 import com.pjy.mallsystem.product.entity.CategoryEntity;
 import com.pjy.mallsystem.product.service.CategoryService;
@@ -49,6 +49,13 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
                 .collect(Collectors.toList());
         return MenuTree;
     }
+
+    @Override
+    public void removeMenuByIds(List<Long> asList) {
+        //TODO 检查当前删除的菜单是否被被的地方引用
+        baseMapper.deleteBatchIds(asList);
+    }
+
 
     private List<CategoryEntity> getChidrenFrom(Long catId, List<CategoryEntity> list) {
         return list.parallelStream()
